@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--task=inference", "--model=yolov7", "--weight_path=/home/bdogan/all_files/ekin_files/vehicle_type_stage_6/2_11_23_yolov7-X.pt", "--source=/home/bdogan/Desktop/burak/dataSet/set9/", "--conf=0.5"]
+        }
+    ]
+}
