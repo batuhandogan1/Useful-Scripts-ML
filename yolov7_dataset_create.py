@@ -38,7 +38,7 @@ val_image_count = val_count / 2
 
 for file in dataset:
     if file.endswith('.jpg'):
-        temp = file.split('.')
+        temp = file.split('.jpg')
 
         shutil.move(args.source_path + '/' + temp[0] + '.jpg', args.export_path + '/val/' + 'images/' + temp[0] + '.jpg')
         shutil.move(args.source_path + '/' + temp[0] + '.txt', args.export_path + '/val/' + 'labels/' + temp[0] + '.txt')
