@@ -7,9 +7,8 @@ class Divide2BB():
         self.paths = []
 
         for result in results:
-            print(result)
-            # self.bboxes.append(result.boxes.xyxy.cpu().numpy())
-            # self.paths.append(result.path)
+            self.bboxes.append(result.boxes.xyxy.cpu().numpy())
+            self.paths.append(result.path)
 
     def get_bboxes(self):
         return self.bboxes

@@ -23,7 +23,7 @@ if args.task == 'inference':
     inferencer.predict()
 
 elif args.task == 'divide2bb':
-    inferencer = Make_Inference(args.model, args.weight_path, args.source, args.size, args.save, args.save_txt, args.conf, args.stream)
+    inferencer = Make_Inference(args.model, args.weight_path, args.source, args.size, args.save, args.save_txt, args.conf)
     results = inferencer.get_result_info()
 
     divider = Divide2BB(results)
