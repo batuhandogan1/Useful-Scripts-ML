@@ -15,6 +15,8 @@ from utils.torch_utils import select_device, time_synchronized, TracedModel
 
 def detect(weight_path, source, size, save, save_txt, conf, just_results=False):
 
+    print(just_results)
+    print('Result yazdim')
     if just_results == False:
         save_dir = Path(increment_path(Path('yolov7_runs/detect') / 'exp', exist_ok=False))
         (save_dir / 'labels' if save_txt else save_dir).mkdir(parents=True, exist_ok=True)
@@ -115,6 +117,7 @@ def detect(weight_path, source, size, save, save_txt, conf, just_results=False):
                             vid_writer = cv2.VideoWriter(save_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))
                         vid_writer.write(im0)
 
+    print(save_txt, save)
     if save_txt or save:
         s = f"\n{len(list(save_dir.glob('labels/*.txt')))} labels saved to {save_dir / 'labels'}" if save_txt else ''
 

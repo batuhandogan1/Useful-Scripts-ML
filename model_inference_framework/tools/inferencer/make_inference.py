@@ -25,6 +25,7 @@ class Make_Inference(Yolov8_Inferencer, Yolov7_Inferencer):
             results = super().yolov8_inference_with_results()
 
         elif self.model == 'yolov7':
+            print('yolov7_inference_with_results girdim')
             results = super().yolov7_inference_with_results()
 
         return results

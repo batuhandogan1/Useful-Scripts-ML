@@ -19,7 +19,9 @@ class Yolov7_Inferencer():
         
     def yolov7_inference_with_results(self):
         self.just_results = True
+        print('Girdim1')
         with torch.no_grad():
             results = detect(self.weight_path, self.source, self.size, False, False, self.conf, self.just_results)
+        print('Girdim2')
 
         return results

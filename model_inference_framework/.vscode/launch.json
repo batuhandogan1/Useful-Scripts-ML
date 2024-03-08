@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["--task=inference", "--model=yolov7", "--weight_path=/home/bdogan/all_files/ekin_files/vehicle_type_stage_6/2_11_23_yolov7-X.pt", "--source=/home/bdogan/Desktop/burak/dataSet/set9/", "--conf=0.5"]
+            "args": ["--task=divide2bb", "--model=yolov7", "--weight_path=/home/bdogan/all_files/ekin_files/vehicle_type_detection/burak_vehicle/yolov7_burak_06_12.pt", "--source=/home/bdogan/Desktop/VideosForTL/temp/"]
         }
     ]
 }
